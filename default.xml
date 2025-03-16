@@ -3,7 +3,6 @@
 	<remote name="github" fetch="https://github.com" />
 
 	<default remote="github" revision="master" sync-j="4" />
-<!--	<project path="." name="spitzbube/qnx-bsp.git" remote="github" /> -->
-	<linkfile dest="Makefile" src=".repo/manifests/Makefile"/>
-	<project path="src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github" />
+	<project path="bsp" name="spitzbube/qnx-bsp.git" remote="github" />
+	<project path="bsp/src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github"/>
 </manifest>
