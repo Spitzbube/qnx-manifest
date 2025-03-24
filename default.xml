@@ -3,6 +3,6 @@
 	<remote name="github" fetch="https://github.com" />
 
 	<default remote="github" revision="master" sync-j="4" />
-	<project path="bsp" name="spitzbube/qnx-bsp.git" remote="github" />
-	<project path="bsp/src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github"/>
+	<project path="bsp" name="spitzbube/qnx-bsp.git" remote="github" revision="qemu-virt-armle"/>
+	<project path="bsp/src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github" revision="armle"/>
 </manifest>
