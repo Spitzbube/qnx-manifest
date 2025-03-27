@@ -4,5 +4,6 @@
 
 	<default remote="github" revision="master" sync-j="4" />
 	<project path="bsp" name="spitzbube/qnx-bsp.git" remote="github" revision="qemu-virt-armle"/>
+	<project path="bsp/src/hardware" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-serdebug-armle"/>
 	<project path="bsp/src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github" revision="armle"/>
 </manifest>
