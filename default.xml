@@ -3,7 +3,16 @@
 	<remote name="github" fetch="https://github.com" />
 
 	<default remote="github" revision="master" sync-j="4" />
-	<project path="bsp" name="spitzbube/qnx-bsp.git" remote="github" revision="raspberry-bcm2835"/>
-	<project path="bsp/src/hardware" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-serdebug-armle"/>
-	<project path="bsp/src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github" revision="armle"/>
+	<project path=".bsp" name="spitzbube/qnx-bsp.git" remote="github" revision="raspberry-bcm2835">
+		<linkfile src="images" dest="images"/>
+		<linkfile src="install" dest="install"/>
+		<linkfile src="prebuilt" dest="prebuilt"/>
+		<linkfile src="Makefile" dest="Makefile"/>
+		<linkfile src="src/Makefile" dest="src/Makefile"/>
+		<linkfile src="src/hardware/Makefile" dest="src/hardware/Makefile"/>
+		<linkfile src="src/hardware/startup/Makefile" dest="src/hardware/startup/Makefile"/>
+		<linkfile src="src/hardware/startup/boards/" dest="src/hardware/startup/boards"/>
+	</project>
+	<project path="src/hardware/devc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-serdebug-armle"/>
+	<project path="src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github" revision="armle"/>
 </manifest>
