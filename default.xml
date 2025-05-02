@@ -14,5 +14,6 @@
 		<linkfile src="src/hardware/startup/boards/" dest="src/hardware/startup/boards"/>
 	</project>
 	<project path="src/hardware/devc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-serdebug-armle"/>
+	<project path="src/hardware/devg" name="spitzbube/qnx-device-driver.git" remote="github" revision="devg-bcm2835"/>
 	<project path="src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github" revision="armle"/>
 </manifest>
