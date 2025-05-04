@@ -13,6 +13,11 @@
 		<linkfile src="src/hardware/startup/Makefile" dest="src/hardware/startup/Makefile"/>
 		<linkfile src="src/hardware/startup/boards/" dest="src/hardware/startup/boards"/>
 	</project>
-	<project path="src/hardware/devc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-serdebug-armle"/>
+	<project path="src/hardware/devc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-seromap">
+		<linkfile src="seromap/arm/le/Makefile" dest="src/hardware/devc/seromap/arm/le.v7/Makefile"/>
+	</project>
+	<project path="src/hardware/i2c" name="spitzbube/qnx-device-driver.git" remote="github" revision="i2c-omap35xx">
+		<linkfile src="omap35xx/arm/j5/le/Makefile" dest="src/hardware/i2c/omap35xx/arm/j5/le.v7/Makefile"/>
+	</project>
 	<project path="src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github" revision="armle"/>
 </manifest>
