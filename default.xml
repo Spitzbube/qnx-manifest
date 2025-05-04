@@ -3,7 +3,7 @@
 	<remote name="github" fetch="https://github.com" />
 
 	<default remote="github" revision="master" sync-j="4" />
-	<project path=".bsp" name="spitzbube/qnx-bsp.git" remote="github" revision="raspberry-bcm2835">
+	<project path=".bsp" name="spitzbube/qnx-bsp.git" remote="github" revision="ti-am335x-beaglebone">
 		<linkfile src="images" dest="images"/>
 		<linkfile src="install" dest="install"/>
 		<linkfile src="prebuilt" dest="prebuilt"/>
@@ -12,11 +12,7 @@
 		<linkfile src="src/hardware/Makefile" dest="src/hardware/Makefile"/>
 		<linkfile src="src/hardware/startup/Makefile" dest="src/hardware/startup/Makefile"/>
 		<linkfile src="src/hardware/startup/boards/" dest="src/hardware/startup/boards"/>
-		<linkfile src="src/Makefile" dest="src/apps/Makefile"/>
-		<linkfile src="src/Makefile" dest="src/apps/gf/Makefile"/>
 	</project>
 	<project path="src/hardware/devc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-serdebug-armle"/>
-	<project path="src/hardware/devg" name="spitzbube/qnx-device-driver.git" remote="github" revision="devg-bcm2835"/>
 	<project path="src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github" revision="armle"/>
-	<project path="src/apps/gf/gf_splash" name="spitzbube/qnx-app.git" remote="github" revision="gf_splash"/>
 </manifest>
