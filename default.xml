@@ -6,9 +6,7 @@
 	<project path=".bsp" name="spitzbube/qnx-bsp.git" remote="github" revision="ti-am335x-beaglebone-sdp700">
 		<linkfile src="images" dest="images"/>
 		<linkfile src="install" dest="install"/>
-		<!--
 		<linkfile src="prebuilt" dest="prebuilt"/>
-		-->
 		<linkfile src="Makefile" dest="Makefile"/>
 		<linkfile src="src/Makefile" dest="src/Makefile"/>
 		<linkfile src="src/hardware/Makefile" dest="src/hardware/Makefile"/>
@@ -18,6 +16,9 @@
 		<linkfile src="src/hardware/support/Makefile" dest="src/hardware/support/Makefile"/>
 		-->
 	</project>
+	<project path="src/services" name="spitzbube/qnx-service.git" remote="github" revision="io-usb-otg"/>
+	<project path="src/hardware/devu" name="spitzbube/qnx-device-driver.git" remote="github" revision="devu-hcd-dm816x-mg-qnx700"/>
+	<project path="src/hardware/devnp" name="spitzbube/qnx-device-driver.git" remote="github" revision="devnp-dm814x-qnx700"/>
 	<!--
 	<project path="src/hardware/devc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-seromap">
 		<linkfile src="seromap/arm/le/Makefile" dest="src/hardware/devc/seromap/arm/le.v7/Makefile"/>
