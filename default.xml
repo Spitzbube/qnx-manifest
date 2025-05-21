@@ -12,21 +12,22 @@
 		<linkfile src="src/hardware/Makefile" dest="src/hardware/Makefile"/>
 		<linkfile src="src/hardware/startup/Makefile" dest="src/hardware/startup/Makefile"/>
 		<linkfile src="src/hardware/startup/boards/" dest="src/hardware/startup/boards"/>
-		<!-- 
 		<linkfile src="src/hardware/support/Makefile" dest="src/hardware/support/Makefile"/>
-		-->
 	</project>
 	<project path="src/services" name="spitzbube/qnx-service.git" remote="github" revision="io-usb-otg"/>
+	<project path="src/hardware/devb/.devb" name="spitzbube/qnx-device-driver.git" remote="github" revision="devb-qnx700">
+		<linkfile src="Makefile" dest="src/hardware/devb/Makefile"/>
+		<linkfile src="common.mk" dest="src/hardware/devb/common.mk"/>
+		<linkfile src="include" dest="src/hardware/devb/include"/>
+	</project>
+	<project path="src/hardware/devb/sdmmc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devb-sdmmc-qnx700"/>
 	<project path="src/hardware/devu" name="spitzbube/qnx-device-driver.git" remote="github" revision="devu-hcd-dm816x-mg-qnx700"/>
 	<project path="src/hardware/devnp" name="spitzbube/qnx-device-driver.git" remote="github" revision="devnp-dm814x-qnx700"/>
-	<!--
-	<project path="src/hardware/devc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-seromap">
-		<linkfile src="seromap/arm/le/Makefile" dest="src/hardware/devc/seromap/arm/le.v7/Makefile"/>
-	</project>
-	<project path="src/hardware/i2c" name="spitzbube/qnx-device-driver.git" remote="github" revision="i2c-omap35xx">
-		<linkfile src="omap35xx/arm/j5/le/Makefile" dest="src/hardware/i2c/omap35xx/arm/j5/le.v7/Makefile"/>
-	</project>
-	<project path="src/hardware/support/wdtkick" name="spitzbube/qnx-device-driver.git" remote="github" revision="wdtkick-omap3530"/>
-	-->
+	<project path="src/hardware/devc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-seromap-qnx700"/>
+	<project path="src/hardware/i2c" name="spitzbube/qnx-device-driver.git" remote="github" revision="i2c-omap35xx-qnx700"/>
+	<project path="src/hardware/spi" name="spitzbube/qnx-device-driver.git" remote="github" revision="spi-dm816x-qnx700"/>
+	<project path="src/hardware/support/am335x-boardid" name="spitzbube/qnx-device-driver.git" remote="github" revision="am335x-boardid"/>
+	<project path="src/hardware/support/dm814x-wdtkick" name="spitzbube/qnx-device-driver.git" remote="github" revision="dm814x-wdtkick"/>
+	<project path="src/hardware/support/am335x-leds" name="spitzbube/qnx-device-driver.git" remote="github" revision="am335x-leds"/>
 	<project path="src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github" revision="armle-v7-sdp700"/>
 </manifest>
