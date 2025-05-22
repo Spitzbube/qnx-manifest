@@ -13,7 +13,7 @@
 		<linkfile src="src/hardware/startup/Makefile" dest="src/hardware/startup/Makefile"/>
 		<linkfile src="src/hardware/startup/boards/" dest="src/hardware/startup/boards"/>
 	</project>
-	<project path="src/hardware/devc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-serdebug-armle"/>
+	<project path="src/hardware/devc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-mb86h60"/>
 	<project path="src/hardware/devu" name="spitzbube/qnx-device-driver.git" remote="github" revision="devu-dm816x-mg"/>
 	<project path="src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github" revision="armle"/>
 </manifest>
