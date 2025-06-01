@@ -18,5 +18,6 @@
 	<project path="src/services/usb_dcd" name="spitzbube-qnx/services/usb_dcd.git" remote="gitlab" revision="io-usb-6.5.0"/>
 	<project path="src/hardware/devc" name="spitzbube/qnx-device-driver.git" remote="github" revision="devc-mb86h60"/>
 	<project path="src/hardware/devu" name="spitzbube/qnx-device-driver.git" remote="github" revision="devu-dm816x-mg"/>
+	<project path="src/hardware/devnp" name="spitzbube-qnx/device-driver/devnp/fmac3h.git" remote="gitlab" revision="master"/>
 	<project path="src/hardware/startup/lib" name="spitzbube/qnx-startup-library.git" remote="github" revision="armle"/>
 </manifest>
